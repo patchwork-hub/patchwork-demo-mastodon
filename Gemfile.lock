@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/patchwork-hub/accounts
-  revision: 4db5689912e662430cb9c8969261bd53ee44a9dd
+  revision: e95bed03cd528f1e381a5a36bccab75a4028b31b
   branch: mome_accounts
   specs:
     accounts (0.1.0)
@@ -17,6 +17,14 @@ GIT
       googleauth (~> 1.13, >= 1.13.1)
       httparty
       rails (~> 8.0)
+
+GIT
+  remote: https://github.com/patchwork-hub/content_filters
+  revision: 7a8a3af4b18d345462cc334f228a8ee642f1e3d0
+  branch: mome_content_filter
+  specs:
+    content_filters (0.1.0)
+      rails (>= 7.1.1)
 
 GIT
   remote: https://github.com/patchwork-hub/conversations
@@ -1009,6 +1017,7 @@ DEPENDENCIES
   color_diff (~> 0.1)
   concurrent-ruby
   connection_pool
+  content_filters!
   conversations!
   csv (~> 3.2)
   database_cleaner-active_record
