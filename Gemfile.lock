@@ -9,7 +9,7 @@ GIT
 
 GIT
   remote: https://github.com/patchwork-hub/accounts
-  revision: e95bed03cd528f1e381a5a36bccab75a4028b31b
+  revision: 1fb8d7ee788d917c5c8a459bf6b77f3c67715823
   branch: mome_accounts
   specs:
     accounts (0.1.0)
