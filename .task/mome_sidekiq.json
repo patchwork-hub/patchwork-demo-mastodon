@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-west-2:672691776916:task-definition/mome-sidekiq:1",
+    "taskDefinitionArn": "arn:aws:ecs:eu-west-2:672691776916:task-definition/mome-sidekiq:11",
     "containerDefinitions": [
         {
             "name": "mome-sidekiq",
@@ -10,7 +10,7 @@
             "command": [
                 "bash",
                 "-c",
-                "aws s3 cp s3://patchwork-private-env/fcm_newsmast_service.json /opt/mastodon/config && bundle exec sidekiq"
+                "aws s3 cp s3://patchwork-private-env/fcm_mo_me_service.json /opt/mastodon/config && bundle exec sidekiq"
             ],
             "environment": [],
             "environmentFiles": [
@@ -22,7 +22,6 @@
             "mountPoints": [],
             "volumesFrom": [],
             "workingDirectory": "/opt/mastodon",
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -40,7 +39,7 @@
     "taskRoleArn": "arn:aws:iam::672691776916:role/patchwork-ecs-task-role",
     "executionRoleArn": "arn:aws:iam::672691776916:role/patchwork-ecs-task-execution-role",
     "networkMode": "awsvpc",
-    "revision": 1,
+    "revision": 11,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -92,7 +91,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-07-22T06:51:08.098Z",
+    "registeredAt": "2025-07-24T06:30:47.160Z",
     "registeredBy": "arn:aws:iam::672691776916:user/ahn",
     "enableFaultInjection": false,
     "tags": []
