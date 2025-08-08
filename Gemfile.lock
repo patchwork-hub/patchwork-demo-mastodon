@@ -20,7 +20,7 @@ GIT
 
 GIT
   remote: https://github.com/patchwork-hub/content_filters
-  revision: 7a8a3af4b18d345462cc334f228a8ee642f1e3d0
+  revision: a06b9de126af5f4ac8299c64d34f76cc25372dc6
   branch: mome_content_filter
   specs:
     content_filters (0.1.0)
