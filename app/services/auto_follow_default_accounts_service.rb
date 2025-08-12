@@ -1,5 +1,5 @@
 class AutoFollowDefaultAccountsService < BaseService
-  DEFAULT_ACCOUNTS = ['mediarevolution@channel.org'].freeze
+  DEFAULT_ACCOUNTS = ['newsmast@newsmast.social'].freeze
 
   def call(source_account)
     return unless source_account.local?
@@ -16,7 +16,7 @@ class AutoFollowDefaultAccountsService < BaseService
     return if target_account.nil?
 
     FollowService.new.call(source_account, target_account, bypass_locked: true, bypass_limit: true)
-  rescue StandardError => e
+  rescue => e
     Rails.logger.error "Failed to auto-follow #{target_acct} for #{source_account.acct}: #{e.message}"
   end
 end
