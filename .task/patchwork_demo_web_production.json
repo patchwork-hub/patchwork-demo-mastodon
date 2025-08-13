@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-west-2:672691776916:task-definition/patchwork-demo-web:7",
+    "taskDefinitionArn": "arn:aws:ecs:eu-west-2:672691776916:task-definition/patchwork-demo-web:11",
     "containerDefinitions": [
         {
             "name": "patchwork-demo-web",
@@ -46,7 +46,7 @@
     "taskRoleArn": "arn:aws:iam::672691776916:role/patchwork-ecs-task-role",
     "executionRoleArn": "arn:aws:iam::672691776916:role/patchwork-ecs-task-execution-role",
     "networkMode": "awsvpc",
-    "revision": 7,
+    "revision": 11,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -92,13 +92,13 @@
     "requiresCompatibilities": [
         "FARGATE"
     ],
-    "cpu": "512",
-    "memory": "1024",
+    "cpu": "1024",
+    "memory": "2048",
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-08-13T03:28:48.973Z",
+    "registeredAt": "2025-08-13T06:57:59.461Z",
     "registeredBy": "arn:aws:iam::672691776916:user/ahn",
     "enableFaultInjection": false,
     "tags": []
