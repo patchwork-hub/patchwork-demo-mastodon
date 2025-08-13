@@ -1,5 +1,5 @@
 {
-    "taskDefinitionArn": "arn:aws:ecs:eu-west-2:672691776916:task-definition/patchwork-demo-web:2",
+    "taskDefinitionArn": "arn:aws:ecs:eu-west-2:672691776916:task-definition/patchwork-demo-web:7",
     "containerDefinitions": [
         {
             "name": "patchwork-demo-web",
@@ -18,7 +18,7 @@
             "command": [
                 "bash",
                 "-c",
-                "aws s3 cp s3://patchwork-private-env/fcm_mo_me_service.json /opt/mastodon/config && bundle exec rails db:create && bundle exec rails db:migrate && bundle exec rails s -p 3000"
+                "aws s3 cp s3://patchwork-private-env/patchwork-demo-firebase-adminsdk-fbsvc-4b862033c1.json /opt/mastodon/config && bundle exec rails db:create && bundle exec rails db:migrate && bundle exec rails s -p 3000"
             ],
             "environment": [],
             "environmentFiles": [
@@ -30,7 +30,6 @@
             "mountPoints": [],
             "volumesFrom": [],
             "workingDirectory": "/opt/mastodon",
-            "ulimits": [],
             "logConfiguration": {
                 "logDriver": "awslogs",
                 "options": {
@@ -38,8 +37,7 @@
                     "awslogs-create-group": "true",
                     "awslogs-region": "eu-west-2",
                     "awslogs-stream-prefix": "ecs"
-                },
-                "secretOptions": []
+                }
             },
             "systemControls": []
         }
@@ -48,7 +46,7 @@
     "taskRoleArn": "arn:aws:iam::672691776916:role/patchwork-ecs-task-role",
     "executionRoleArn": "arn:aws:iam::672691776916:role/patchwork-ecs-task-execution-role",
     "networkMode": "awsvpc",
-    "revision": 2,
+    "revision": 7,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
@@ -100,7 +98,7 @@
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
     },
-    "registeredAt": "2025-08-12T04:44:04.925Z",
+    "registeredAt": "2025-08-13T03:28:48.973Z",
     "registeredBy": "arn:aws:iam::672691776916:user/ahn",
     "enableFaultInjection": false,
     "tags": []
