@@ -74,4 +74,4 @@ docker-compose.override.yml
 
 # Ignore local-only rspec configuration
 .rspec-local
-config/fcm_mo_me_service.json
+config/patchwork-demo-firebase-adminsdk-fbsvc-4b862033c1.json
