@@ -11,7 +11,7 @@ module BrandingHelper
   end
 
   def _logo_as_symbol_wordmark
-    image_tag(frontend_asset_path('images/patchwork-with-text.svg'), alt: 'Patchwork Logo', width: 100, class: 'logo logo--wordmark')
+    image_tag(frontend_asset_path('images/patchwork-with-text.svg'), alt: 'Patchwork Logo', width: 180, class: 'logo logo--wordmark')
   end
 
   def _logo_as_symbol_icon
