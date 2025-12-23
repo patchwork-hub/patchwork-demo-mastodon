@@ -9,8 +9,8 @@ GIT
 
 GIT
   remote: https://github.com/patchwork-hub/accounts
-  revision: f83e3e71ba769afa267569de1bba046a4a652587
-  branch: qlub-staging
+  revision: b30d9f67c8f0adec4ad9314bc9dd97d0d1e6ab68
+  branch: main
   specs:
     accounts (0.1.0)
       byebug (~> 11.1)
